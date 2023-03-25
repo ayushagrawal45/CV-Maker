@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create resume</title>
+    <link rel="stylesheet" href="/css/cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="/js/cv.js"></script>
+    <section class="header">
+        <nav>
+            <img src="/img/attachment_13054970.png" alt="" class="logo">
+            <ul>
+                <li><a href="#"><img src="/img/contact us logo.png" alt=""><span>Contact us</span></a></li>
+                <li><a href="#"><img src="/img/login logo.png" alt=""><span>Login</span></a></li>
+            </ul>
+        </nav>
+        <div class="textbox1">
+            <div class="box">
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- first column -->
+                        <h3 style="text-decoration:underline;">Personal Information</h3>
+                        <div class="form-group">
+                            <!-- first name -->
+                            <div class="input-box">
+                                <label for="namefield" class="details">First Name</label>
+                                <input type="text" id="fnamefield" placeholder="e.g. John" class="form-control">
+                            </div>
+                            <!-- last name -->
+                            <div class="input-box">
+                                <label for="namefield" class="details">Last Name</label>
+                                <input type="text" id="lnamefield" placeholder="e.g. Doe" class="form-control">
+                            </div>
+                            <!-- email -->
+                            <div class="input-box">
+                                <label for="emailfield" class="details">Email</label>
+                                <input type="email" id="emailfield" placeholder="Enter your email" class="form-control">
+                            </div>
+                            <!-- phone -->
+                            <div class="input-box">
+                                <label for="contactfield" class="details">Phone</label>
+                                <input type="text" id="contactfield" placeholder="Enter your mobile no."
+                                    class="form-control">
+                            </div>
+                            <!-- country -->
+                            <div class="input-box">
+                                <label for="countryfield" class="details">Country</label>
+                                <input type="text" id="countryfield" placeholder="Enter here" class="form-control">
+                            </div>
+                            <!-- city -->
+                            <div class="input-box">
+                                <label for="cityfield" class="details">City</label>
+                                <input type="text" id="cityfield" placeholder="Enter here" class="form-control">
+                            </div>
+                            <!-- address -->
+                            <div class="input-box">
+                                <label for="addressfield" class="details">Your Address</label>
+                                <textarea style="width: 500px; height:100px" id="addressfield" placeholder="Enter here"
+                                    class="form-control">
+                            </textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <!-- second column -->
+                        <h3 style="text-decoration:underline;">Important link</h3>
+                        <!-- fb field -->
+                        <div class="input-box">
+                            <label for="fbfield" class="details">Facebook</label>
+                            <input type="text" id="fbfield" placeholder="Label/Link" class="form-control">
+                        </div>
+                        <!-- insta field -->
+                        <div class="input-box">
+                            <label for="instafield" class="details">Instagram</label>
+                            <input type="text" id="instafield" placeholder="Label/Link" class="form-control">
+                        </div>
+                        <!-- instagram field -->
+                        <div class="input-box">
+                            <label for="linkedinfield" class="details">LinkedIn</label>
+                            <input type="text" id="linkedinfield" placeholder="Label/Link" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 style="text-decoration: underline;">Professional Information</h3>
+                        <!-- objective -->
+                        <div class="form-group">
+                            <div class="input-box">
+                                <label for="" class="details">objective</label>
+                                <p style="margin-top: 2px;
+                                text-align: justify;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: rgb(130, 139, 162);">Write 2-4 short & energetic sentences to interest the
+                                    reader! Mention your role,
+                                    experience & most importantly - your biggest achievements, best qualities and
+                                    skills.
+                                <p>
+                                    <textarea name="" id="objectivefield" cols="60" rows="8"
+                                    class="form-control"
+                                        placeholder="e.g. Passionate software developer with 5+ years of experience and a track record of...."></textarea>
+                            </div>
+                        </div>
+                        <!-- work experience -->
+                        <div class="form-group">
+                            <div class="input-box" id="we">
+                                <label for="" class="details">Work Experience</label>
+                                <textarea 
+                                placeholder="e.g. show your relevant experience" 
+                                class="form-control weField"
+                                    rows="3" 
+                                    cols="60"
+                                    ></textarea>
+                                <div class="container text-center mt-2" id="weAddButton">
+                                    <button onclick="addNewWeField()" class="btn btn-primary btn-sm">+ Add
+                                        employement</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- academic section -->
+                        
+                        <div class="form-group">
+                            <div class="input-box" id="eq">
+                                <label for="" class="details">Academic Qualification </label>
+                                <textarea 
+                                placeholder="e.g. Graduted with higher degree" 
+                                class="form-control eqField"
+                                    rows="3" 
+                                    cols="60"
+                                    ></textarea>
+                                <div class="container text-center mt-2" id="eqAddButton">
+                                    <button onclick="addNeweqField()" class="btn btn-primary btn-sm">+ Add
+                                        education
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- skill section -->
+                        <!-- <div class="form-group">
+                            <div class="input-box" id="sk">
+                                <label for="" class="details">Skills</label>
+                                <textarea placeholder="e.g. c++,java,android developer" class="form-control skField"
+                                    rows="4" cols="60">
+                                </textarea>
+                                <div class="container text-center mt-2"> -->
+                                    <!-- <button class="btn btn-primary btn-sm" id="skAddButton">+ Add skills</button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--  -->
+                    </div>
+                </div>
+                <div class="container text-center mt-3">
+                    <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- cv template -->
+     <div class="container" id="cv-template">
+        <div class="row">
+            <!-- first col -->
+            <div class="col-md-4 text-center py-5 background">
+                <img src="https://www.computerhope.com/jargon/g/guest-user.jpg" alt="" class="img-fluid myimg" />
+                <div class="container">
+                    <p id="nameT1">Aman Kumar</p>
+
+                    <h1 style="font-weight: 190; font-size:160%;background-color: #9fc5da38;">
+                        CONTACT
+                        <hr>
+                    </h1>
+                    <div class="det">
+                        <p id="emailT"><i class="bi bi-telephone"></i>ayuoo@gmail.com</p>
+                        <p id="contactT">1234567899,654654655</p>
+                        <p id="countryT">india,mumbai</p>
+                        <p id="AddressT">264612313,sector51</p>
+                    </div>
+
+                    <h1 style="font-weight: 190; font-size:160%;background-color: #9fc5da38; ">
+                        Important Link
+                        <hr>
+                    </h1>
+                    <p>
+                        <a id="fbT" href="#">http://www.facebook.com/xty</a> <!-- facebook link -->
+                    </p>
+                    <p>
+                        <a id="instaT" href="#">http://www.instagram.com/xty</a> <!-- instagram link -->
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#">http://www.linkedin.com/xty</a> <!-- linkedin link -->
+                    </p>
+
+                    
+                </div>
+            </div>
+
+            <!-- second col -->
+            <div class="col-md-8 py-5">
+                <h1 id="nameT2" class="text-center" style="font-weight: 990;">
+                    Arun Kumar Tiwari
+                </h1>
+
+                <!-- objective part -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: #28209812;">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui
+                            officia, voluptates
+                            quos dolores modi corporis atque, perferendis ipsa reprehenderit tempore porro iusto nulla
+                            placeat facere, eaque vero neque ex. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aliquid cumque alias sunt illo voluptate dolor quisquam illum voluptatum saepe cum.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- work experience part -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: #28209812;">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, architecto.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, architecto.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, architecto.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Academic qualification -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: #28209812;">
+                        <h3>Academic qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>
+                                first
+                            </li>
+                            <li>
+                                second
+                            </li>
+                            <li>
+                               third
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" style="background-color: #0d6efd; color: white; border-radius: 10px;"
+                        class="btn background">
+                        Print CV
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     
+
+</body>
+
+</html>
